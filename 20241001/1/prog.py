@@ -7,3 +7,4 @@ def Pareto(*arg):
         else:
             answ += ((x),)
     return answ
+print(Pareto(*eval(input())))
