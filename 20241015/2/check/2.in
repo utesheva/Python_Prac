@@ -1,0 +1,7 @@
+:hi "Hello,world!"
+hi
+:print x "x"
+print I love python
+:str_mult x y x*y
+str_mult "hi" 5
+quit "{}:{}"

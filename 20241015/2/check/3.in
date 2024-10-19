@@ -1,0 +1,5 @@
+:adder a b c d a+b+c+d
+adder 1 2 3 4
+adder 2 3 4 6
+adder 9458 21938 2931 654
+quit '{}     {}' 

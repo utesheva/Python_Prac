@@ -1,0 +1,6 @@
+:cos x cos(x)
+cos 10
+:decorate s "--<<{}>>--".format(s)
+decorate "123"
+cos 90
+quit "{} {}"
