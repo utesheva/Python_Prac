@@ -1,0 +1,1 @@
+def slide(seq, n)
