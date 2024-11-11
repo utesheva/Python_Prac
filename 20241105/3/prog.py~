@@ -1,0 +1,18 @@
+class Maze:
+    def __init__(self, n=1):
+        self.n = n
+        self.lab = [["█" for i in range(2 * n + 1)]  for j in range(2 * n + 1)]
+        for i in range(n):
+            for j in range(n):
+                self.lab[2 * i + 1][2 * j + 1] = '·'
+
+    def __getitem__(self, k):
+        x0 = k[0]
+        y0 = k[1].start
+        x1 = k[1].stop
+        y1 = k[2]
+        print(x0, y0, x1, y1)
+        #self.lab[2 * k + 1][2 * k + 1] = '.'
+
+m = Maze(4)
+print(m[0,0 : 1,0],m[0,0 : 2,2],m[1,0 : 1,2])
