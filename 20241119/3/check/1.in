@@ -1,0 +1,10 @@
+wo = Vowel(y=6, a=1, i=3)
+print(wo.full)
+wo.e = 2
+wo.o = 4
+wo.u = 5
+print(wo, wo.full)
+try:
+	wo.answer = 5
+except:
+	print('Ok')
