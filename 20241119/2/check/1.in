@@ -1,0 +1,10 @@
+class D:
+  num = Num()
+print(D().num)
+c, d = D(), D()
+c.num = d.num = 3
+print(c.num+d.num)
+c.num = "asdfghjk"
+print(c.num+d.num)
+d.num = range(10, 100, 7)
+print(c.num+d.num)
