@@ -4,12 +4,13 @@ import struct
 import os
 
 try:
-    file = io.BytesIO(sys.stdin.buffer.read())
-    if len(file.getvalue()) < 44:
+    path = input()
+    file = open(path, 'rb')
+    if os.path.getsize(path) < 44:
         raise AttributeError('NO')
     file.seek(4)
     size, marker = struct.unpack('i4s', file.read(8))
-    if marker != 'WAVE':
+    if marker != b'WAVE':
         raise AttributeError('NO')
     file.seek(20)
     tp, chan, sample = struct.unpack('hhi', file.read(8))
