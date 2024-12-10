@@ -18,7 +18,7 @@ async def cons(q2):
         a = await q2.get()
         print(f'cons: got {a} from q2')
 
-def main():
+async def main():
     q1 = asyncio.Queue()
     q2 = asyncio.Queue()
     ptask = asyncio.create_task(prod(q1))
